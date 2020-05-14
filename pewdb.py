@@ -9,7 +9,7 @@ db=SqliteDatabase('pew.db')
 class Clients(Model):
      Name=TextField(unique=True)
      City=TextField()
-     #Address=CharField()
+     Address=CharField()
 
      class Meta:
         database=db
